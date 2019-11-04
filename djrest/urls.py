@@ -20,6 +20,8 @@ from djrest.sarox import views
 
 router = routers.DefaultRouter()
 router.register(r'users', views.UserViewSet)
+router.register(r'addnewuser', views.AddNewUserViewSet)
+router.register(r'login', views.LoginViewSet)
 router.register(r'groups', views.GroupViewSet)
 
 # Wire up our API using automatic URL routing.
