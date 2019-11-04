@@ -2,6 +2,7 @@ from django.shortcuts import render
 from django.contrib.auth.models import User, Group
 from rest_framework import viewsets
 from djrest.sarox.serializers import UserSerializer, GroupSerializer
+from models import SaroxUsers
 
 
 class UserViewSet(viewsets.ModelViewSet):
